@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Short_Description"
+        android:layout_below="@id/space"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Short Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#3F51B5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/Short_Description"
+        android:id="@+id/Short_Descriptionfield"
+        android:layout_width="match_parent"
+        android:background="#E5F1E5"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/SHORT_DESCRIPTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:hint="Short Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/State"
+        android:layout_below="@id/Short_Descriptionfield"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:layout_weight="1"
+            android:onClick="statefunction"
+            android:text="State"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Statefield"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/State"
+        android:background="#E5F1E5"
+        android:onClick="statefunction">
+
+        <TextView
+            android:id="@+id/STATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:onClick="statefunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+
+   <LinearLayout
+       android:id="@+id/prioritytextview"
+       android:layout_below="@id/Statefield"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:orientation="horizontal">
+
+       <TextView
+           android:id="@+id/prioritytext"
+           android:layout_width="wrap_content"
+           android:textColor="#3F51B5"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Priority"
+           android:onClick="Priorityfunction"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/priorityfield"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/prioritytextview"
+        android:background="#E5F1E5"
+        android:onClick="Priorityfunction">
+
+        <TextView
+            android:id="@+id/PRIORITY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Priority"
+            android:inputType="textPersonName"
+            android:onClick="Priorityfunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Configuration_itemview"
+        android:layout_below="@id/priorityfield"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:onClick="Configuration_itemfunction"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Configuration_itemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Configuration Item"
+            android:textColor="#3F51B5"
+            android:onClick="Configuration_itemfunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Configuration_itemfield"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Configuration_itemview"
+        android:background="#E5F1E5"
+        android:onClick="Configuration_itemfunction">
+
+        <TextView
+            android:id="@+id/CONFIGURATION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Configuration Item"
+            android:inputType="textPersonName"
+            android:onClick="Configuration_itemfunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Assignmentgroup_itemview"
+        android:layout_below="@id/Configuration_itemfield"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:onClick="Assignmentgroup_itemfunction"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Assignmentgroup_itemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Assignment group"
+            android:textColor="#3F51B5"
+            android:onClick="Assignmentgroup_itemfunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Assignmentgroup_itemfield"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Assignmentgroup_itemview"
+        android:background="#E5F1E5"
+        android:onClick="Assignmentgroup_itemfunction">
+
+        <TextView
+            android:id="@+id/ASSIGNMENTGROUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Assignment group"
+            android:inputType="textPersonName"
+            android:onClick="Assignmentgroup_itemfunction"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Description_itemview"
+        android:layout_below="@id/Assignmentgroup_itemfield"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Description_itemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description"
+            android:textColor="#3F51B5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/Description_itemview"
+        android:id="@+id/Description_itemfield"
+        android:layout_width="match_parent"
+        android:background="#E5F1E5"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/DESCRIPTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:hint="Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below = "@+id/Description_itemfield"
+        android:id="@+id/Submit_itemfield">
+
+        <Button
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:id="@+id/SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#009688"
+            android:text="Submit">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

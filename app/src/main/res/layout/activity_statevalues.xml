@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statevalues">
+
+    <LinearLayout
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/servicenow"
+        android:orientation="horizontal"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/New"
+        android:orientation="horizontal"
+        android:layout_below="@id/space">
+
+        <TextView
+            android:id="@+id/NEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="Newclick"
+            android:text="New"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124"></TextView>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:orientation="horizontal"
+       android:id="@+id/space2"
+       android:layout_below="@id/New">
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/In_Progress"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space2">
+
+        <TextView
+            android:id="@+id/IN_PROGRESS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="IN Progress"
+            android:onClick="InProgressClick"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/space3"
+        android:layout_below="@id/In_Progress">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Onhold"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space3">
+
+        <TextView
+            android:id="@+id/ONHOLD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="On Hold"
+            android:onClick="OnholdClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/space4"
+        android:layout_below="@id/Onhold">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Resolved"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space4">
+
+        <TextView
+            android:id="@+id/RESOLVED"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Resolved"
+            android:onClick="ResolvedClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/space5"
+        android:layout_below="@id/Resolved">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Closed"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space5">
+
+        <TextView
+            android:id="@+id/CLOSED"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Closed"
+            android:onClick="ClosedClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/space6"
+        android:layout_below="@id/Closed">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Canceled"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space6">
+
+        <TextView
+            android:id="@+id/CANCELED"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Canceled"
+            android:onClick="CanceledClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#246124">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
